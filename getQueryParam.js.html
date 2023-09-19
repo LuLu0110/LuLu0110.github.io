@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="en"><head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WrenchJS 神策 SDK 工具库 -  getQueryParam.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">WrenchJS 神策 SDK 工具库</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a href="index.html" class="link">
+                    Documentation
+                </a>
+                
+                 
+                    
+                        <a class="link user-link " href="https://github.com/sensorsdata/wrench">
+                            Github
+                        </a>
+                    
+                        <a class="link user-link " href="https://www.npmjs.com/package/wrenchjs">
+                            Npm
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div class="sidebar " id="sidebarNav">
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#getSafeHostname">getSafeHostname</a></li></ul></div><div class="category"><h2>Array</h2><h3>Global</h3><ul><li><a href="global.html#each">each</a></li><li><a href="global.html#filter">filter</a></li><li><a href="global.html#indexOf">indexOf</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#toArray">toArray</a></li><li><a href="global.html#unique">unique</a></li><li><a href="global.html#values">values</a></li></ul></div><div class="category"><h2>Bom</h2><h3>Modules</h3><ul><li><a href="module-cookie.html">cookie</a></li><li><a href="module-localStorage.html">localStorage</a></li><li><a href="module-sessionStorage.html">sessionStorage</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ajax">ajax</a></li><li><a href="global.html#decodeURI">decodeURI</a></li><li><a href="global.html#decodeURIComponent">decodeURIComponent</a></li><li><a href="global.html#getCookieTopLevelDomain">getCookieTopLevelDomain</a></li><li><a href="global.html#getHostname">getHostname</a></li><li><a href="global.html#getIOSVersion">getIOSVersion</a></li><li><a href="global.html#getQueryParam">getQueryParam</a></li><li><a href="global.html#getQueryParamsFromUrl">getQueryParamsFromUrl</a></li><li><a href="global.html#getScreenOrientation">getScreenOrientation</a></li><li><a href="global.html#getUA">getUA</a></li><li><a href="global.html#getURL">getURL</a></li><li><a href="global.html#getURLPath">getURLPath</a></li><li><a href="global.html#getURLSearchParams">getURLSearchParams</a></li><li><a href="global.html#isIOS">isIOS</a></li><li><a href="global.html#isSupportBeaconSend">isSupportBeaconSend</a></li><li><a href="global.html#isSupportCors">isSupportCors</a></li><li><a href="global.html#jsonp">jsonp</a></li><li><a href="global.html#mediaQueriesSupported">mediaQueriesSupported</a></li><li><a href="global.html#URL">URL</a></li><li><a href="global.html#urlParse">urlParse</a></li><li><a href="global.html#xhr">xhr</a></li></ul></div><div class="category"><h2>Dom</h2><h3>Global</h3><ul><li><a href="global.html#getDomBySelector">getDomBySelector</a></li><li><a href="global.html#getElementContent">getElementContent</a></li><li><a href="global.html#hasAttribute">hasAttribute</a></li><li><a href="global.html#hasAttributes">hasAttributes</a></li><li><a href="global.html#loadScript">loadScript</a></li><li><a href="global.html#ry">ry</a></li><li><a href="global.html#setCssStyle">setCssStyle</a></li></ul></div><div class="category"><h2>Encoding</h2><h3>Modules</h3><ul><li><a href="module-urlSafeBase64.html">urlSafeBase64</a></li></ul><h3>Global</h3><ul><li><a href="global.html#base64Decode">base64Decode</a></li><li><a href="global.html#base64Encode">base64Encode</a></li><li><a href="global.html#dfmapping">dfmapping</a></li><li><a href="global.html#formatJsonString">formatJsonString</a></li><li><a href="global.html#hashCode">hashCode</a></li><li><a href="global.html#hashCode53">hashCode53</a></li><li><a href="global.html#rot13defs">rot13defs</a></li><li><a href="global.html#rot13obfs">rot13obfs</a></li><li><a href="global.html#safeJSONParse">safeJSONParse</a></li><li><a href="global.html#strToUnicode">strToUnicode</a></li></ul></div><div class="category"><h2>Event</h2><h3>Classes</h3><ul><li><a href="EventEmitter.html">EventEmitter</a></li></ul><h3>Global</h3><ul><li><a href="global.html#addEvent">addEvent</a></li><li><a href="global.html#addHashEvent">addHashEvent</a></li><li><a href="global.html#bindReady">bindReady</a></li><li><a href="global.html#listenPageState">listenPageState</a></li></ul></div><div class="category"><h2>Math</h2><h3>Global</h3><ul><li><a href="global.html#getRandom">getRandom</a></li><li><a href="global.html#getRandomBasic">getRandomBasic</a></li></ul></div><div class="category"><h2>String</h2><h3>Global</h3><ul><li><a href="global.html#trim">trim</a></li></ul></div><div class="category"><h2>Util</h2><h3>Modules</h3><ul><li><a href="module-logger.html">logger</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ConcurrentStorage">ConcurrentStorage</a></li><li><a href="global.html#coverExtend">coverExtend</a></li><li><a href="global.html#encodeDates">encodeDates</a></li><li><a href="global.html#extend">extend</a></li><li><a href="global.html#extend2Lev">extend2Lev</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#inherit">inherit</a></li><li><a href="global.html#isArguments">isArguments</a></li><li><a href="global.html#isArray">isArray</a></li><li><a href="global.html#isBoolean">isBoolean</a></li><li><a href="global.html#isDate">isDate</a></li><li><a href="global.html#isElement">isElement</a></li><li><a href="global.html#isEmptyObject">isEmptyObject</a></li><li><a href="global.html#isFunction">isFunction</a></li><li><a href="global.html#isHttpUrl">isHttpUrl</a></li><li><a href="global.html#isJSONString">isJSONString</a></li><li><a href="global.html#isNumber">isNumber</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isString">isString</a></li><li><a href="global.html#isUndefined">isUndefined</a></li><li><a href="global.html#now">now</a></li><li><a href="global.html#searchObjDate">searchObjDate</a></li><li><a href="global.html#throttle">throttle</a></li><li><a href="global.html#UUID">UUID</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>getQueryParam.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import getQueryParamsFromUrl from './getQueryParamsFromUrl';
+import _URL from './URL';
+
+/** 获取 url 中指定查询参数的值
+ *
+ * @param {String} url 传入 url
+ * @param {String} key 指定需要获取的查询参数的 key
+ * @returns {String} url 查询参数中指定 key 的值
+ * @function getQueryParam
+ * @category Bom
+ * @example
+ * var val = getQueryParam('https://a.b.com?a=1&amp;b=2','b');
+ * console.log(val); // =&gt; 2
+ */
+export default function getQueryParam(url, key) {
+  //eslint-disable-next-line
+  var urlParts = _URL(url);
+  var result = urlParts.searchParams.get(key) || '';
+
+  if (!result) {
+    var hash = urlParts.hash;
+    if (hash) {
+      var results = getQueryParamsFromUrl(hash);
+      result = results[key] || '';
+    }
+  }
+
+  return result;
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+
+
+</body></html>
